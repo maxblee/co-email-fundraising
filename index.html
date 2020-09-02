@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script defer src="./graphic.js"></script>
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Data Visualization for Political Email Story</title>
+</head>
+<body>
+    <main>
+    <div id="email-graphic">
+        <div class="gfx__graphic__wrapper">
+            <div class="gfx__container__info">
+                <h1 class="gfx__word__sel"></h1>
+                <p id="gardner-data-selection"></p>
+                <p id="hickenlooper-data-selection"></p>
+            </div>
+            <div class="gfx__selection__wrapper">
+                <label for="word-selection">Choose a word:</label>
+                <select id="word-selection">
+                </select>
+            </div>
+            <div class="gfx__content">
+                <div class="gfx__legend">
+                    <div class="gfx__legend__item">
+                        <span aria-hidden="true">
+                            <svg width="5" height="30" role="img">
+                                <rect width="3" stroke-width="1" height="30" class="filled gardner"></rect>
+                            </svg>
+                            Email contains this word.
+                        </span>
+                    </div>
+                    <div class="gfx__legend__item">
+                        <span aria-hidden="true">
+                            <svg width="5" height="30"><rect width="3" stroke-width="1" height="30" class="empty gardner"></rect></svg>
+                            Email doesn't contain this word.
+                        </span>
+                    </div>
+                </div>
+                <div class="gfx__graphic">
+                    <svg id="email-svg-graphic" width="100%" height="125" role="img">
+                        <title>Graphic displaying the number of times Gardner and Hickenlooper used this word or phrase in their emails.</title>
+                    </svg>    
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

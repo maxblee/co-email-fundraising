@@ -1,0 +1,80 @@
+.gardner {
+    stroke: #ff0000;
+    fill: #ff0000;
+}
+
+.hickenlooper {
+    stroke: #0000ff;
+    fill: #0000ff;
+}
+
+.empty {
+    fill-opacity: 0.3;
+    opacity: 0.2
+}
+
+.tick {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gfx__legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gfx__legend__item {
+    padding: 10px;
+}
+
+.gfx__graphic {
+    display: flex;
+    justify-content: center;
+}
+
+.gfx__legend__item__subset {
+    display: inline;
+}
+
+.gfx__selection__wrapper > label, select {
+    display: block;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.gfx__container__info {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gfx__container__info > p {
+    font-size: 1.2rem;
+}
+
+.axis__dates {
+    color: rgb(87,87,87)
+}
+
+.axis__names {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 750px) {
+    rect.gfx__rect {
+        width: 0.5px;
+        stroke-width: 1px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    rect.gfx__rect {
+        width: 0.1px;
+        stroke-width: 0.5px;
+        height: 30px;
+    }
+}
